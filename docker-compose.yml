@@ -1,0 +1,9 @@
+version: '3'
+services:
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/Horbus_test
+    command: ["python", "app.py"]
